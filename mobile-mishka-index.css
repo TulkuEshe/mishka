@@ -1,0 +1,247 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+  .container {
+  	margin: 0 auto;
+  	max-width: 320px;
+  	background-color: #ffffff;
+  	text-align: center;
+  	box-sizing: border-box;
+  }
+ .body {
+ 	font-family: 'Open Sans', sans-serif;
+ 	color: #000000;
+ }
+
+.header-menu {
+	display: flex;
+	justify-content: space-between;
+}
+.interior, .childrens  {
+	display: flex;
+	justify-content: space-around;
+
+
+}
+.knitted__item--attribute, .nitted__item--peculiarity {
+	display: flex;
+	justify-content: space-between; 
+}
+
+img.about-as__photo, .about-as__text {
+    display: flex;
+    padding-left: 20px;
+    align-self:flex-start;
+}
+img {
+	vertical-align: top;
+}
+
+.hidden {
+	display: none;
+}
+
+
+.header-menu__logo {
+	display: flex;
+	background-size: 100%;
+	padding-top: 20px;
+    justify-content: center;
+    margin-left: 37%;
+    margin-right: 10%;
+
+
+}
+
+.header-menu__button {
+   display: flex;
+   background-size: cover;
+   height: 100%;
+   padding-top: 30px;
+   align-items: flex-start;
+    margin-left: 10%;
+    margin-right: 20%;
+}
+
+.arrows {
+	display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.arrows__left, .arrows__right {
+	display: flex;
+    width: 50%;
+    flex-wrap: wrap;
+}
+
+a {
+	text-decoration: none;
+	color: #000000;
+}
+
+li {
+	list-style: none;
+}
+
+.header-menu {
+	margin-bottom: 22px;
+}
+
+.main-paragraph {
+	font-size: 27px;
+	font-weight: 600;
+}
+
+.top {
+	background-image: url('../img/top-photo.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	padding-top: 78px;
+	padding-bottom: 126px;
+}
+.interior {
+	background-color: #63d1bb;
+}
+
+.childrens {
+	background-color: #56c3b2;
+}
+.interior__paragraph {
+	color: #ffffff;
+	font-size: 19px;
+	font-weight: 600;
+	padding-top: 32px;
+	padding-bottom: 34px;
+}
+
+.interior__photo {
+	background-size: 100%;
+}
+
+.knitted__text {
+	font-size: 25px;
+	font-weight: 600;
+	padding-top: 40px;
+	padding-bottom: 15px;
+}
+
+.knitted__week {
+	text-align: left;
+	font-size: 17px;
+	font-weight: 600;
+	color: #63d1bb;
+	text-transform: uppercase;
+} 
+
+.knitted__text, .knitted__week, .knitted__product, .knitted__item {
+text-align: left;
+}
+
+.knitted {
+	
+	color: #b7b7b7;
+	font-size: 15px;
+	font-weight: 300;
+}
+.knitted__price {
+	padding-top: 32px;
+	font-size: 17px;
+	color: #444444;
+	font-weight: 600;
+	text-align: center;
+}
+.knitted__photo {
+	
+}
+
+.button {
+	 background: none;
+	 border: none;
+	 border: 2px solid #444444;
+}
+
+.button__order {
+   margin-top: 32px;
+   margin-bottom: 34px;  
+   padding: 18px 84px; 
+  text-transform: uppercase;
+  font-size: 17px;
+  font-weight: 600;
+  color: #444444;
+}
+.about-as {
+	text-align: left;
+	font-weight: 600;
+}
+.about-as__short {
+	font-size: 25px;
+	margin-bottom: 34px;
+}
+
+.about-as__text {
+	font-size: 17px;
+	margin-top: 24px;
+	margin-bottom: 34px;
+}
+.reviews {
+	margin-top: 70px;
+	text-align: left;
+}
+
+.reviews__title {
+	
+	font-size: 25px;
+	font-weight: 600;
+	margin-bottom: 42px;
+}
+.reviews__text {
+	font-size: 15px;
+	color: #444444;
+	font-weight: 300;
+	line-height: 2.5em;
+}
+
+.reviews__signature {
+	font-size: 18px;
+	font-weight: 600;
+	padding-top: 44px;
+	padding-bottom: 20px;
+}
+.reviews__dog {
+	font-size: 18px;
+	font-weight: 400;
+	padding-bottom: 40px;
+}
+
+.social, .footer__dev {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	align-content:center;
+
+}
+
+
+.social {
+    padding-left: 10%;
+	padding-right: 10%;
+}
+
+.footer {
+	margin-top: 40px;
+}

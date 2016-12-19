@@ -1,0 +1,277 @@
+@charset "UTF-8";
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline; }
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block; }
+
+  .container {
+  	margin: 0 auto;
+  	max-width: 320px;
+  	background-color: #ffffff;
+  	text-align: center;
+  	box-sizing: border-box;
+  }
+ .body {
+ 	font-family: 'Open Sans', sans-serif;
+ }
+
+.wrapper {
+  width: 90%;
+  margin: 0 auto;
+}
+.body .menu-button {
+	width: 3%;
+	padding-top: 20px;
+	vertical-align: middle;
+
+}
+.mishka-logo {
+	text-align: center;
+	width: 40%;
+	padding-top: 22px;
+}
+.border {
+   border-top: 1px solid #ececec;
+   margin-top: 14px;
+   margin-bottom: 18px;
+}
+
+img {
+	    vertical-align: top;
+}
+  .hader-menu {
+  	padding-bottom: 20px;
+  }
+  .main-paragraph {
+  	font-size: 27px;
+  	font-weight: 600;
+  }
+ .main-part-paragraph {
+    font-size: 19px;
+    font-weight: 600;
+ }
+
+ .main-phpto-style {
+ 	margin-top: 28px;
+ }
+
+ .inline-block {
+ 	display: inline-block;
+ }
+
+ .interior-photo {
+ 	width: 43%;
+ 	vertical-align: top;
+ }
+
+ .interior {
+ 	width: 55%;
+ }
+
+ li {
+ 	list-style:none;
+ }
+
+ a {
+ 	text-decoration: none;
+ }
+ .main-first-part {
+ 	padding-top: 80px;
+ }
+
+ .main-second-part {
+ 	background: #63d1bb;
+ 	margin-top: 128px;
+ 	
+ }
+
+ .main-third-part {
+    background: #56c3b2;
+ }
+ .main-second-part, .main-third-part {
+ 	color: #ffffff;
+ 	text-align: left;
+ 	padding-top: 33px;
+ 	padding-bottom: 35px;
+    padding-left: 30px
+ }
+
+ .footer {
+ 	background: #f1f1f1;
+ }
+ .blue {
+ 	color: #63d1bb;
+ }
+
+ .left {
+ 	text-align: left;
+ }
+
+ .price {
+ 	padding-top: 32px;
+ 	padding-bottom: 30px;
+ 	font-size: 17px;
+ 	color: #444444;
+ 	font-weight: 600;
+ }
+ .ordering, .section-arrow-sides-button {
+ 	
+ 	border: 2px solid #444444;
+ 	padding-top: 18px;
+ 	padding-bottom: 18px;
+    margin: 0 auto;
+    margin-bottom: 35px; 
+ 	
+ }
+.about-as-short {
+	font-weight: 600;
+	font-size: 25px;
+	color: #000000;
+	padding-top: 38px;
+
+}
+ .item-week, .price, .about-as-li-text {
+ 	font-weight: 600;
+ 	font-size: 17px;
+ }
+
+ .ordering a {
+ 	color: #444444;
+ 	font-weight: 600;
+ 	font-size: 17px;
+ 	
+ }
+
+ .item-week, .ordering a {
+ 	text-transform: uppercase;
+ }
+
+.about-as-li-photo {
+	padding-top: 38px;
+	padding-bottom: 24px;
+
+ }
+li.section-reviews-text-mam,
+ li.section-reviews-text {
+ 	line-height: 2;
+ 	font-size: 15px;
+ }
+ li.section-reviews-text {
+ 	font-weight: 600;
+ }
+
+ .section-reviews-anastasiya {
+ 	padding-top: 42px;
+ 	padding-bottom: 20px;
+ 	font-weight: 600;
+ }
+
+ .section--contacts-block--h3,  .section-reviews-anastasiya, .section-reviews-dog {
+ 	font-size: 18px;
+ }
+
+ .section-reviews-dog {
+ 	padding-bottom: 38px;
+ 	
+ }
+
+ .section-arrow-sides {
+ }
+
+ .section-arrow-left, .section-arrow-right {
+ 	padding: 12px 40px 12px 38px;
+ 	border: 1px solid #ececec;
+ 	margin-bottom: 38px;
+
+ }
+
+ .section-arrow-right {
+ 	border-left: none;
+ 	width: 20%;
+ 	
+ }
+
+ .section-arrow-left {
+   width: 22%;
+ }
+
+ .section-arrow-sides-button {
+
+ 	margin-bottom: 44px;
+ }
+
+ .section-arrow-sides-button a {
+   color: #444444;
+   font-size: 18px;
+   font-weight: 600;
+   text-transform: uppercase;
+ }
+
+ .section--reviews-h1 {
+ 	font-size: 21px;
+ 	color: #000000;
+ 	font-weight: 600;
+ }
+
+ .section-reviews-text, .section--contacts-block-li, .section--contacts-block-adress {
+ 	font-weight: 300;
+ 	font-size: 15px;
+
+ }
+
+ .section--knitted-product {
+ 	margin-top: 37px;
+ 	line-height: 2;
+
+ }
+
+ .section--knitted-attribute {
+ 	padding-top: 40px;
+ }
+
+.section--knitted-attribute-peculiarity  {
+ 	width: 55%;
+ }
+
+ .section--knitted-attribute-trait {
+ 	    width: 43%;
+ }
+ .section--contacts-block--h3 {
+ 	font-weight: 600;
+ 	padding-top: 48px;
+ 	padding-bottom: 48px;
+ }
+
+ .section--contacts-block-email-adress {
+ 	border-bottom: 1px solid #62d1ba;
+ 	padding-bottom: 8px;
+ 	margin-bottom: 42px;
+ }
+
+.section--contacts-block-li {
+	width: 50%;
+	display: block;
+	float: right;
+}
+.section--contacts-block-email-adress, .section--contacts-block-adress {
+	width: 50%;
+
+
+}
+
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}

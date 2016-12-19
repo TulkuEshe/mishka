@@ -1,0 +1,59 @@
+.knitted {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	padding-top: 7%;
+}
+
+.knitted__list {
+	width: 29%;
+	z-index: 4000;
+	text-align: left;
+	padding-top: 3%;
+}
+
+.knitted__week {
+	  width: 14%;
+    color: #63d1bb;
+    font-size: 17px;
+    font-weight: 600;
+    vertical-align: top;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 6.5%;
+}
+
+.knitted__photo {
+	width: 50%;
+	background-image: url(../img/main-photo.jpg);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	min-height: 634px;
+	max-width: 525px;
+	z-index: 0;
+}
+
+.knitted__item--text {
+	z-index: 1000;
+	font-size: 53px;
+	font-weight: 600;
+	width: 196%;
+}
+
+.knitted__item--product {
+	font-size: 17px;
+	font-weight: 400;
+	color: #444444;
+	width: 110%;
+	line-height: 2.2em;
+	padding-top: 18%;
+}
+.knitted__item--attribute,
+.knitted__item--peculiarity {
+	width: 49%;
+	display: inline-block;
+}
+
+.knitted__border {
+	border-top: 1px solid #444444;
+}

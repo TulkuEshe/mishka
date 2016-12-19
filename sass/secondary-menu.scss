@@ -1,0 +1,35 @@
+.secondary-menu {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.secondary-menu__item {
+  width: 50%;
+&--light {
+	background: #63d1bb;
+}
+&--dark {
+	background: #56c3b2;
+}
+}
+
+.secondary-menu__paragraph {
+  text-align: left;
+  width: 73%;
+  font-size: 20px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.secondary-menu__item {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	content: "";
+	background-image: url(../img/wave-pattern.png);
+	background-repeat: repeat-x;
+	background-size: 143%;
+	background-position: 50% 118%;
+	height: 100%;
+	
+}
