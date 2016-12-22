@@ -9,22 +9,26 @@
 <body class="body">
 	<header class="header container">
     <menu class="menu">
-      <div class="menu__item">
-      	<a class="menu__link" href="">Каталог товаров</a>
-				<a class="menu__link" href="">Вязание на заказ</a>
-				<a class="menu__link  menu__link--secondary" href="">Новые поступления</a>
-			  <a class="menu__link  menu__link--secondary" href="">Распродажа</a>
-      </div>
-      <div class="menu__item">
-      	<img class="menu__logo" src="img/logo-1.png">
-      </div>
-      <div class="menu__item">
-        <div class="menu__search">
-        	<img src="img/search.png">
-        </div>
-				<a class="menu__basket" href=""><img src="img/bascket.png">Корзина: пока пуста</a>
-				<a class="menu__delivery" href="">Бесплатная доставка по России</a>
-      </div>
+        <div class="menu__top">
+	        <div class="menu__item  menu__item--first">
+	      		<a class="menu__top-link  menu__link--first" href="">Каталог товаров</a>
+						<a class="menu__top-link  menu__link--second" href="">Вязание на заказ</a>
+					</div>
+					<div class="menu__item  menu__item--center">
+	      				<img class="menu__logo" src="img/logo-1.png">
+	      	</div>
+	      	<div class="menu__item  menu__item--last">
+		        <div class="menu__search">
+		        	<img src="img/search.png">
+							<a class="menu__basket" href=""><img src="img/bascket.png">Корзина: пока пуста</a> 
+						</div>
+					</div>
+				</div>
+				<div class="menu_bottom">
+					<a class="menu__link  menu__link--secondary" href="">Новые поступления</a>
+			  	<a class="menu__link  menu__link--secondary" href="">Распродажа</a>
+					<a class="menu__delivery" href="">Бесплатная доставка по России</a>
+				</div>
   	</menu>
 	</header>
 	<main>
@@ -40,15 +44,15 @@
 			</section>
 		</div>
 		<section class="featured container">
-		  <div class="featured__item">
+		  <div class="featured__item featured__item--first">
 		    <span class="featured__week">Товар</br>недели</span>
-		    <h2 class="featured__title">Вязаные корзинки</h2>
 		  </div>
-      <div class="featured__item">
+      <div class="featured__item featured__item--second">
+      		<h2 class="featured__title">Вязаные корзинки</h2>
       	<p class="featured__text">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
       	<ul class="featured__list">
 					<li class="featured__row">
-						<p class="featured__label  ">Цвет:</p>
+						<p class="featured__label">Цвет:</p>
 						<p class="featured__info">"Тиффани"/серый</p>
 					</li>
 					<li class="featured__row">
@@ -61,28 +65,33 @@
 					</li>	
 				</ul>
       </div>
-		  <div class="featured__item">
+      <div class="featured__item  featured__item--photo"><img src="img/main-photo.jpg"></div>
+		  <div class="featured__item featured__item--cost">
 				<p class="featured__price">Цена: 990 руб.</p>
 				<button class="button">Заказать</button>
 			</div>	
-			<div class="featured__item  featured__item--photo"><img src="img/main-photo.jpg"></div>
+			
 		</section>
 		<section class="about-us container">
 		  <h2 class="about-us__text">Коротко о нас:</h2>
-			<ul class="about-us__list">
-			  <li class="about-us__item  about-us__item--eco">Экологически чистые материалы</li>
-				<li class="about-us__item  about-us__item--style">Скандинавский стиль по российской цене</li>
-				<li class="about-us__item  about-us__item--like">Увеличивает лайки на фотографиях</li>
-				<li class="about-us__item  about-us__item--love">Связанно вручную с любовью и умилением</li>
-				<li class="about-us__item  about-us__item--support">Поддержка отечественного производителя</li>
-				<li class="about-us__item  about-us__item--pack">Поставляется в подарочной упаковке</li>
-			</ul>
+			<div class="about-us__list">
+			  <ul class="about-us__left">
+				  <li class="about-us__item  about-us__item--eco">Экологически чистые материалы</li>
+					<li class="about-us__item  about-us__item--style">Скандинавский стиль по российской цене</li>
+					<li class="about-us__item  about-us__item--like">Увеличивает лайки на фотографиях</li>
+				</ul>
+        <ul class="about-us__right">
+					<li class="about-us__item  about-us__item--love">Связанно вручную с любовью и умилением</li>
+					<li class="about-us__item  about-us__item--support">Поддержка отечественного производителя</li>
+					<li class="about-us__item  about-us__item--pack">Поставляется в подарочной упаковке</li>
+				</ul>
+			</div>
 		</section>
 		<section class="reviews container">
-			<div class="reviews__item">
+			<div class="reviews__item  reviews__item--top-left">
 				<h2 class="reviews__title">Отзывы</h2>
 			</div>
-			<div class="reviews__item">
+			<div class="reviews__item  reviews__item--top-right">
 				<button class="button">
 					Написать
 				</button>
@@ -90,7 +99,7 @@
 			<div class="reviews__item">
 				<p class="reviews__text">Я молодая мама, но всё равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
 			</div>
-			<div class="reviews__item">
+			<div class="reviews__item reviews__item--bottom-block">
 			  <div class="reviews__left">
 					<p class="reviews__signature">Анастасия Красильникова</p>
 					<p class="reviews__email">@misssssiskras</p>
@@ -104,8 +113,8 @@
 			</div>
 		</section>
 		<section class="contacts container">
-		    <div class="contacts__item">
-		    	<h2 class="contacts__title">Контакты<</h2>
+		    <div class="contacts__item contacts__item--flag">
+		    	<h2 class="contacts__title">Контакты</h2>
 		    </div>
 		    <div class="contacts__item">
 		    	<ul class="contacts__list">
@@ -122,7 +131,7 @@
 		    <div class="contacts__item">
 		    	<button class="button">Напишите нам</button>
 		    </div>
-		    <div class="contacts__item">
+		    <div class="contacts__item contacts__item--block-map>
 		    	  <div class="contacts__map"><img src="img/map.jpg"></div>
 		    </div>
 		</section>

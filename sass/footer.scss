@@ -1,0 +1,25 @@
+.footer .container {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer__item  {
+	width: 30%;
+}
+
+.social {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer__dev {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer {
+	background-color: #f1f1f1;
+}

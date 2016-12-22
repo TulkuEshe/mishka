@@ -1,35 +1,41 @@
 .secondary-menu {
 	display: flex;
-	flex-wrap: wrap;
-}
-
-.secondary-menu__item {
-  width: 50%;
-&--light {
-	background: #63d1bb;
-}
-&--dark {
-	background: #56c3b2;
-}
-}
-
-.secondary-menu__paragraph {
-  text-align: left;
-  width: 73%;
-  font-size: 20px;
-  font-weight: 600;
-  color: #ffffff;
-}
-
-.secondary-menu__item {
-	display: flex;
-	justify-content: center;
 	align-items: center;
-	content: "";
+	justify-content: space-around;
+	flex-wrap: wrap;
 	background-image: url(../img/wave-pattern.png);
-	background-repeat: repeat-x;
-	background-size: 143%;
-	background-position: 50% 118%;
-	height: 100%;
+	background-size: 100%;
+	background-position: bottom;
+	background-repeat: no-repeat;
+	z-index: 3000;
+  padding-bottom: 3%;
+  background-color: #63d1bb;
+}
+
+.secondary-menu__item {
+	width: 50%;
+	z-index: 0;
 	
+}
+
+.secondary-menu__item--light {
+	background-color: #63d1bb;
+	background-image: url(../img/torchere.png);
+	background-repeat: no-repeat;
+	background-position: 90%;
+	z-index: 0;
+}
+
+.secondary-menu__item--dark {
+	background-color: #56c3b2;
+	background-image: url(../img/toys.png);
+	background-repeat: no-repeat;
+	background-position: 90%;
+	z-index: 0;
+}
+.secondary-menu__paragraph {
+	width: 35%;
+	text-align: center;
+	color: #ffffff;
+	line-height: 1.8em;
 }

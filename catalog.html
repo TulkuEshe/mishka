@@ -1,9 +1,7 @@
 <!DOCTYPE html>
-
 <html lang="ru">
 <head>
 	<meta charset="utf-8">
-
 	<link href="css/style.css" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
 	<title>Каталог Мишка</title>
@@ -11,76 +9,75 @@
 <body class="body">
 	<header class="header container">
 		<menu class="menu">
-			<div class="menu__item">
-				<a class="menu__link" href="">Каталог товаров</a>
-				<a class="menu__link" href="">Вязание на заказ</a>
-				<a class="menu__link  menu__link--secondary" href="">Новые поступления</a>
-				<a class="menu__link  menu__link--secondary" href="">Распродажа</a>
-			</div>
-			<div class="menu__item">
-				<img class="menu__logo" src="img/logo-1.png">
-			</div>
-			<div class="menu__item">
-				<div class="menu__search">
-					<img src="img/search.png">
+        <div class="menu__top">
+	        <div class="menu__item  menu__item--first">
+	      		<a class="menu__top-link  menu__link--first" href="">Каталог товаров</a>
+						<a class="menu__top-link  menu__link--second" href="">Вязание на заказ</a>
+					</div>
+					<div class="menu__item  menu__item--center">
+	      				<img class="menu__logo" src="img/logo-1.png">
+	      	</div>
+	      	<div class="menu__item  menu__item--last">
+		        <div class="menu__search">
+		        	<img src="img/search.png">
+							<a class="menu__basket" href=""><img src="img/bascket.png">Корзина: пока пуста</a> 
+						</div>
+					</div>
 				</div>
-				<a class="menu__basket" href=""><img src="img/bascket.png">Корзина: пока пуста</a>
-				<a class="menu__delivery" href="">Бесплатная доставка по России</a>
-			</div>
-		</menu>
+				<div class="menu_bottom">
+					<a class="menu__link  menu__link--secondary" href="">Новые поступления</a>
+			  	<a class="menu__link  menu__link--secondary" href="">Распродажа</a>
+					<a class="menu__delivery" href="">Бесплатная доставка по России</a>
+				</div>
 	</header>
 	<main>
-		<section class="banner  container">
-			<h1 class="banner__paragraph">Каталог товаров</h1>
+		<section class="top-banner  container">
+			<h1 class="top-banner__paragraph">Каталог товаров</h1>
 		</section>  
-		<section>
+		<section class="container catalog">
 			<div class="catalog__item">
-				<div class="catalog__photo  catalog__photo--rabbit"></div>
+				<div class="catalog__photo"><img src="img/rabbit.jpg"></div>
 				<div class="catalog__text">
 					<h3 class="сatalog__name">Зайчик-попрыгайчик</h3>
 					<p class="catalog__features">Рост 30 см, вес 200 г</p>
 				</div>
 				<div class="catalog__price">
 					<p class="catalog__cost">1 200 руб.</p>
-					<span class="catalog__basket"></span>
 				</div>
 			</div>
 			<div class="catalog__item">
-				<div class="catalog__photo  catalog__photo--crate"></div>
+				<div class="catalog__photo"><img src="img/basket.jpg"></div>
 				<div class="catalog__text">
 					<h3 class="catalog__name">Корзинка для белья</h3>
 					<p class="catalog__features">Диаметр 15 см, высота 10 см</p>
 				</div>
 				<div class="catalog__price">
 					<p class="catalog__cost">960 руб.</p>
-					<span class="catalog__basket"></span>
 				</div>
 			</div>
 			<div class="catalog__item">
-				<div class="catalog__photo  catalog__photo--pannier"></div>
+				<div class="catalog__photo"><img src="img/big-basket.jpg"></div>
 				<div class="catalog__text">
-					<h3 class="catalog__name">Большая корзинка для игрушек</h3>
+					<h3 class="catalog__name">Большая корзинка</br> для игрушек</h3>
 					<p class="catalog__features">Диаментр 30 см, высота 30 см</p>
 				</div>
 				<div class="catalog__price">
 					<p class="catalog__cost">1 500 руб.</p>
-					<span class="catalog__basket"></span>
 				</div>
 			</div>
 		</section> 
 		<section class="video">
 			<div class="video__item">
-				<span class="video__img"></span>
 				<p class="video__title">Процесс производства</p>
 			</div>
 			<div class="video__item video__item--block">
-				<video></video>
+				<img src="img/video.jpg">
 			</div>
 			<div class="video__item video__item--text">
 				<p  class="video__text">По просьбам наших любимых фелловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
 			</div>
 			<div class="video__item video__item--button">
-				<button class="button">Сделать заказ</button>
+				<button class="button button--order">Сделать заказ</button>
 			</div>
 		</section>
 	</main>

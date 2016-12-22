@@ -1,0 +1,55 @@
+.reviews {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	background-image: url(../img/zigzag.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+}
+
+.reviews__item--top-left {
+	width: 70%;
+}
+
+.reviews__text {
+	width: 71.8%;
+  text-align: left;
+  color: #444444;
+  font-size: 17px;
+  font-weight: 300;
+}
+.reviews__title {
+	font-size: 53px;
+	font-weight: 600;
+}
+
+.reviews__signature {
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.reviews__email {
+	color: #444444;
+  font-size: 17px;
+  font-weight: 300;
+}
+
+.arrow--left,
+.arrow--right {
+	border: none;
+	background: none;
+}
+
+.reviews__item--bottom-block {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.reviews__left,
+.reviews__righ {
+	width: 49%;
+}

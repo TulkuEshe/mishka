@@ -1,0 +1,72 @@
+.featured {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+	background-image: url(../img/zigzag.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: bottom;
+}
+
+.featured__item--first {
+ width: 10%;
+}
+
+
+.featured__item--second {
+	width: 40%;
+	z-index: 3000;
+}
+
+.featured__item--photo {
+	width: 40%;
+	z-index: 0;
+}
+
+.featured__week {
+	width: 30%;
+	text-align: left;
+	vertical-align: top;
+	color: #63d1bb;
+	font-size: 17px;
+	font-weight: 600;
+}
+
+.featured__item--cost {
+	width: 100%;
+}
+
+.featured__title {
+	font-size: 53px;
+	font-weight: 600;
+	width: 156%;
+}
+
+.featured__text {
+	font-size: 17px;
+	font-weight: 400;
+	color: #444444;
+	width: 66%;
+	line-height: 1.8em;
+}
+.featured__list {
+  	font-size: 17px;
+	font-weight: 400;
+	color: #444444;
+}
+
+.featured__row {
+	display: flex;
+	flex-wrap: wrap;
+	border-bottom: 1px solid #444444;
+}
+
+.featured__label,
+.featured__info {
+	width: 50%;
+}
+
+.featured__label {
+	
+}

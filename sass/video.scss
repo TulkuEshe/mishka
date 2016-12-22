@@ -1,0 +1,31 @@
+.video {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.video__item--block {
+	width: 66%;
+}
+
+.video__text {
+	font-size: 15px;
+	font-weight: 400;
+	color: #444444;
+	width: 66%;
+	line-height: 1.8em;
+}
+
+.video__item--text {
+	width: 34%;
+}
+.video__item--button {
+	width: 34%;
+}
+
+.video__title {
+	width: 20%;
+	font-size: 20px;
+	font-weight: 600;
+}

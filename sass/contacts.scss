@@ -1,0 +1,33 @@
+.contacts {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
+}
+
+.contacts__title {
+	font-size: 53px;
+	font-weight: 600;
+}
+
+.contacts__item {
+	width: 25%;
+}
+
+.contacts__item--block-map {
+	width: 50%;
+}
+.contacts__address {
+	display: flex;
+	flex-wrap: wrap;
+}
+.contacts__label,
+.contacts__info {
+	width: 50%;
+}
+.contacts__item--flag {
+	background-image: url(../img/flag.png);
+	background-repeat: no-repeat;
+	background-position: 50%;
+	background-size: contain;
+}

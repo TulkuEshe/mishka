@@ -1,0 +1,39 @@
+.catalog {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-top: 15%;
+}
+
+.сatalog__name {
+	font-size: 20px;
+	font-weight: 600;
+}
+
+.catalog__features {
+	font-size: 15px;
+	font-weight: 400;
+	color: #444444;
+	border-bottom: 1px solid #ececec;
+	padding-bottom: 15%;
+
+}
+
+.catalog__cost {
+	 font-size: 17px;
+	 font-weight: 600;
+	 padding-top: 5%;
+}
+.catalog__item {
+	
+	box-sizing: border-box;
+}
+
+.catalog__text,
+.catalog__price {
+ width: 70%;
+}
+.catalog__price {
+	border-bottom: 1px solid solid #ececec;
+}
