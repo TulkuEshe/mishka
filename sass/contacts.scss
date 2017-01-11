@@ -1,17 +1,15 @@
 .contacts {
 	display: flex;
 	flex-wrap: wrap;
-	justify-content: center;
 	align-items: center;
+	position: relative;
+	padding-top: 70px;
+	padding-bottom: 104px;
 }
 
 .contacts__title {
 	font-size: 53px;
 	font-weight: 600;
-}
-
-.contacts__item {
-	width: 25%;
 }
 
 .contacts__item--block-map {
@@ -20,14 +18,132 @@
 .contacts__address {
 	display: flex;
 	flex-wrap: wrap;
+  padding-top: 16px;
 }
 .contacts__label,
 .contacts__info {
 	width: 50%;
 }
+.contacts__info {
+	width: 78%;
+	line-height: 1.8;
+}
+
+.contacts__label {
+ width: 22%;
+ padding-top: 5px;
+}
 .contacts__item--flag {
-	background-image: url(../img/flag.png);
+	position: relative;
+}
+.contacts__item--flag::before {
+	background-image: url(../img/icon-flag.svg);
 	background-repeat: no-repeat;
-	background-position: 50%;
+	position: absolute;
+	top: 0;
+	left: -150px;
+  content: "";
+  width: 46px;
+  height: 86px;
 	background-size: contain;
+}
+.contacts__left-block {
+	padding-left: 175px;
+	width: 50%;
+	box-sizing: border-box;
+}
+
+.contacts__item--info {
+	max-width: 306px;
+	box-sizing: border-box;
+}
+.contacts__list {
+	padding: 0;
+}
+
+.contacts__item--button {
+	display: flex;
+    order: 2;
+    padding-left: 175px;
+    margin-top: -56px
+}
+  .contacts__info--left {
+  
+    max-width: 181px;
+    text-align: left;
+    font-family: Open Sans, sans-serif;
+}
+.contacts__link {
+	border-bottom: 1px solid $green;
+	display: inline-block;
+}
+.contacts__link:hover {
+  color: $colorlink;
+}
+.contacts__link:active {
+  color: $linkactiv;
+}
+
+
+@media (max-width: 1049px) {
+	.contacts__left-block {
+		padding-left: 0;
+		width: 100%;
+	}
+  .contacts__item--block-map {
+    width: 120%;
+    background-image: url(../img/map-desktop@2x.jpg);
+    background-repeat: no-repeat;
+    display: block;
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+  .contacts__item--info {
+  	width: 100%;
+  	max-width: 668px;
+  }
+  .contacts__list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .contacts__address {
+  	width: 50%;
+  }
+  .contacts__item--flag::before {
+    left: auto;
+    right: 0;
+
+  }
+  .contacts__item--button {
+  	text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+	.contacts__title {
+		font-size: 18px;
+		padding-bottom: 46px;
+	}
+	.contacts__item--flag::before {
+		background-image: none;
+	}
+	.contacts__address {
+		width: 100%;
+		padding-top: 0;
+    padding-bottom: 46px;
+    font-size: 15px;
+	}
+  .contacts__link {
+  	border: none;
+  }
+  .contacts__item--block-map {
+  	margin-left: -30px;
+    margin-right: -30px;
+  }
+  .contacts__item--button {
+  	text-align: center;
+    padding-left: 0;
+    padding-top: 30px;
+  }
 }

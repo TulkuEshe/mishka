@@ -7,124 +7,178 @@
 	<title>Мишка форма</title>
 </head>
 <body class="body">
-	<header class="header container">
-		<menu class="menu">
-        <div class="menu__top">
-	        <div class="menu__item  menu__item--first">
-	      		<a class="menu__top-link  menu__link--first" href="">Каталог товаров</a>
-						<a class="menu__top-link  menu__link--second" href="">Вязание на заказ</a>
-					</div>
-					<div class="menu__item  menu__item--center">
-	      				<img class="menu__logo" src="img/logo-1.png">
-	      	</div>
-	      	<div class="menu__item  menu__item--last">
-		        <div class="menu__search">
-		        	<img src="img/search.png">
-							<a class="menu__basket" href=""><img src="img/bascket.png">Корзина: пока пуста</a> 
+	<header class="header"> 
+		<div class="container">
+	    <menu class="menu container">
+	        <div class="menu__top">
+		        <div class="menu__item  menu__item--first">
+		      		<a class="menu__link  menu__link--first" href="">Каталог товаров</a>
+							<a class="menu__link  menu__link--second" href="">Вязание на заказ</a>
+						</div>
+						<div class="menu__item  menu__item--center">
+						  <div class="menu__logo">
+		      			<img  src="img/logo-desktop.svg">
+		      		</div>
+		      		<div class="menu__tablet">
+		      			<img src="img/logo-tablet.svg">
+		      		</div>		
+		      		<div class="menu__mobile">
+		      			<img  src="img/logo-mobile.svg">
+		      		</div>
+		      		<div class="menu__open">
+		      			<img  src="img/icon-menu-open.svg">
+		      		</div>
+		      		<div class="menu__closed">
+		      			<img  src="img/icon-menu-close.svg">
+		      		</div>		
+		      	</div>
+		      	<div class="menu__item  menu__item--last">
+			        <div class="menu__search">
+			          <div class="menu__img">
+			        	<img src="img/icon-search.svg">
+			        	</div>
+			        	<a class="menu__link menu__link--search" href="#">Поиск по сайту</a>
+							</div>
+							<div class="menu__basket" >
+								<a href="">
+								<img src="img/icon-cart.svg">
+								<p class="menu__info">Корзина: пока пуста</p>
+								</a>
+							</div> 
 						</div>
 					</div>
-				</div>
-				<div class="menu_bottom">
-					<a class="menu__link  menu__link--secondary" href="">Новые поступления</a>
-			  	<a class="menu__link  menu__link--secondary" href="">Распродажа</a>
-					<a class="menu__delivery" href="">Бесплатная доставка по России</a>
-				</div>
-  	</menu>
+					<div class="menu__bottom">
+						<div class="menu__item  menu__item--hidden">
+							<a class="menu__link  menu__link--first" href="">Новые поступления</a>
+				  		<a class="menu__link  menu__link--second" href="">Распродажа</a>
+						</div>
+						<a class="menu__delivery" href="#">Бесплатная доставка по России</a>
+					</div>
+	  	</menu>
+  	</div>
 	</header>
 	<main class="main">
-		<section class="top-banner container">			 	
-			<h1 class="top-banner__paragraph">Вязание на заказ</h1>
+		<section class="top-banner">	
+		  <div class="container">
+				<h1 class="top-banner__paragraph ">Вязание на заказ</h1>
+			</div>		 	
 		</section>
 		<section class="form-block container">
 			<p class="form-block__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали</p>
-			<div class="form-block__top-section">
+		</section>
+		<section class="form-block">
+		 <div class="container">
 				<div class="form-block__left">
-					<h1 class="form-block__title">Тип</h1>
+					Тип
 				</div>
 				<div class="form-block__right">
-					<div class="form-block__top-radio">
-						<input class="form-block__input" type="radio" name="">
-						<label class="form-block__radio">Аксессуар для интерьера</label>
+						<input class="form-block__input" type="radio" name="type" checked id="radio_1">
+						<label class="form-block__radio" for="radio_1">Аксессуар для интерьера</label>
+						<input lass="form-block__input" type="radio" name="type" id="radio_2">
+						<label class="form-block__radio" for="radio_2">Детская игрушка</label>
+				</div>
+			</div>
+		</section>
+		<section class="form-block  form-block--gray">
+			<div class="container">
+				<div class="form-block__left">
+					Цвет
+				</div>
+				<div class="form-block__right">
+						<input class="form-block__input" type="checkbox" name="color" id="checkbox_1" checked>
+						<label class="form-block__checkbox" for="checkbox_1">Белый</label>
+						<input class="form-block__input" type="checkbox" name="color" id="checkbox_2" checked>
+						<label class="form-block__checkbox" for="checkbox_2">Серый</label>
+						<input class="form-block__input" type="checkbox" name="color" id="checkbox_3">
+						<label class="form-block__checkbox" for="checkbox_3">«Тиффани»</label>
+						<input class="form-block__input" type="checkbox" name="color" id="checkbox_4">
+						<label class="form-block__checkbox" for="checkbox_4">Черный</label>
+						<input class="form-block__input" type="checkbox" name="color" id="checkbox_5">
+						<label class="form-block__checkbox" for="checkbox_5">Розовый</label>
+						<input class="form-block__input" type="checkbox" name="color" id="checkbox_6">
+						<label class="form-block__checkbox" for="checkbox_6">Оранжевый</label>
+				</div>
+			</div>
+		</section>
+		<section class="form-block">
+			<div class="container">
+				<div class="form-block__left">
+					ФИО
+				</div>
+				<div class="form-block__right">
+				  <div class="form-block__line">
+						<label class="form-block__text  form-block__text--first">Имя:</label>
+						<div class="form-block__regular-input">
+							<input class="form-block__open-input  form-block__open-input--top" type="text" name="" placeholder="Введите ваше имя*" required>
+						</div>
 					</div>
-					<div class="form-block__bottom-radio">
-						<input lass="form-block__input" type="radio" name="">
-						<label class="form-block__radio">Детская игрушка</label>
+					<div class="form-block__line">
+						<label class="form-block__text">Фамилия:</label>
+						<div class="form-block__regular-input">
+							<input class="form-block__open-input  form-block__open-input--next" type="text" name="" placeholder="Укажите фамилию*" required>
+						</div>
+					</div>
+					<div class="form-block__line">
+						<label class="form-block__text">Отчество:</label>
+						<div class="form-block__regular-input">
+							<input class="form-block__open-input  form-block__open-input--next" type="text" name="" placeholder="Отчество, если желаете"> 
+						</div>
 					</div>
 				</div>
 			</div>
 		</section>
-		<section class="form-block container form-block--section">
-			<div class="form-block__part form-block__part--left">
-				<h1 class="form-block__title">Цвет</h1>
-			</div>
-			<div class="form-block__part form-block__part--right"">
-			  <div class="form-block__top-input">
-					<input class="form-block__input" type="checkbox" name="">
-					<label class="form-block__checkbox">Белый</label>
-					<input class="form-block__input" type="checkbox" name="">
-					<label class="form-block__checkbox">Серый</label>
-					<input class="form-block__input" type="checkbox" name="">
-					<label class="form-block__checkbox"><p>«Тиффани»</p></label>
+		<section class="form-block  form-block--gray form-block--phone">
+			<div class="container">
+				<div class="form-block__left">
+						Тел
 				</div>
-				<div class="form-block__bottom-input">
-					<input class="form-block__input" type="checkbox" name="">
-					<label class="form-block__checkbox"><p>Черный</p></label>
-					<input class="form-block__input" type="checkbox" name="">
-					<label class="form-block__checkbox"><p>Розовый</p></label>
-					<input class="form-block__input" type="checkbox" name="">
-					<label class="form-block__checkbox"><p>Оранжевый</p></label>
+				<div class="form-block__right  form-block__right--more">
+					<input class="form-block__open-input  form-block__logo--phone" type="text" name="" placeholder="+7 XXX XX XX*" required>
 				</div>
 			</div>
 		</section>
-		<section class="form-block container">
-			<div class="form-block__part form-block__part--left">
-				<h1 class="form-block__title">ФИО</h1>
-			</div>
-			<div>
-			<p class="form-block__text">Имя:</p>
-			<input class="form-block__open-input" type="text" name="">
-			<p class="form-block__text">Фамилия:</p>
-			<input class="form-block__open-input" type="text" name="">
-			<p class="form-block__text"">Отчество:</p>
-			<input class="form-block__open-input" type="text" name="">
+		<section class="form-block form-block--gray form-block--email">
+    	<div class="container">
+				<div class="container form-block__left form-block__left--email">
+							E-mail
+				</div>
+				<div class="form-block__right  form-block__right--more">
+					<input class="form-block__open-input  form-block__logo--email" type="text" name="" placeholder="Ваш Email*" required>
+				</div>
 			</div>
 		</section>
-		<section class="form-block container">
-			<div class="form-block__part form-block__part--left">
-				<h1 class="form-block__title">Тел</h1>
-			</div>
-			<input class="form-block__open-input" type="text" name="">
-			<span class="form-block__logo form-block__logo--phone"></span>
-			<div class="form-block__part form-block__part--left">
-				<h1 class="form-block__title">E-mail</h1>
-			</div>
-			<input class="form-block__open-input" type="text" name="">
-			<span class="form-block__logo form-block__logo--email"></span>
+		<section class="form-block">
+			 	<div class="container">
+					<div class="form-block__left">
+						Доп
+					</div>
+					<div class="form-block__right  form-block__right--more">
+						<textarea class="form-block__place-text" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+					</div>	
+				</div>
 		</section>
-		<section class="form-block container">
-			<div class="form-block__part form-block__part--left">
-				<h1 class="form__title">Доп</h1>
-			</div>
-			<textarea class="form-block__place-text"></textarea>
-			<div class="form-block__bottom-part">
-				<p class="form-block__important">*Поля обязательны для заполнения</p>
-				<button class="button button--sent">Оправить заказ</button>
+		<section class="form-block form-block__bottom">
+			<div class="container">
+				<div class="form-block__bottom-part">
+				  <button class="button  button--sent">Оправить заказ</button>
+					<p class="form-block__important">*Поля обязательны для заполнения</p>
+				</div>
 			</div>
 		</section>
 	</main>
 	<footer class="footer">
 		<div class="container">
-			<div class="footer__item"><img src="img/logo.png"></div>
+			<div class="footer__item footer__item--hidden"><img src="img/logo-footer.svg"></div>
 			<ul class="footer__item  social">
-				<li class="social__icon  social__icon--inst"><img src="img/inst.png"></li>
-				<li class="social__icon  social__icon--fb"><img src="img/fb.png"></li>
-				<li class="social__icon  social__icon--tw"><img src="img/tw.png"></li>
+				<li class="social__icon  social__icon--inst"><img src="img/icon-insta.svg"></li>
+				<li class="social__icon  social__icon--fb"><img src="img/icon-fb.svg"></li>
+				<li class="social__icon  social__icon--tw"><img src="img/icon-twitter.svg"></li>
 			</ul>
 			<div class="footer__item  footer__dev">
 				<p class="footer__dev-copy">Разработано</p>
-				<div class="footer__dev-photo"><img src="img/html.png"></div>
+				<div class="footer__dev-photo"><img src="img/logo-htmlacademy.svg"></div>
 			</div>			
-		</div>
+    </div>
 	</footer>
 </body>
 </html>

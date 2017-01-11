@@ -1,25 +1,88 @@
-
+.about-us {
+  padding-top: 68px;
+  padding-bottom: 30px;
+}
 
 .about-us__text {
 	font-size: 53px;
 	font-weight: 600;
 	text-align: left;
-	width: 80%;
+	padding-left: 175px;
+	padding-bottom: 40px;
+	margin: 0 auto;
 }
-.about-us__left,
-.about-us__right
- {
- 	display: inline-block;
-	width: 45%;
+
+.about-us__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
 	font-size: 20px;
+	width: 50%;
 	font-weight: 600;
+	padding-top: 60px;
+	padding-bottom: 60px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+}
+.about-us__list {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-left: 175px;
 }
 
 .about-us__item--eco {
-	background-image: url(../img/flower.png);
-	background-repeat: no-repeat;
-	background-position: 50%;
-	background-size: contain;
-	background-position: top;
-  
+  background-size: 34px 40px;
+	background-image: url(../img/icon-feature-1.svg);
+	
+}
+
+.about-us__item--style {
+  background-size: 50px 30px;
+	background-image: url(../img/icon-feature-3.svg);
+}
+
+.about-us__item--like {
+  background-size: 38px 26px;
+	background-image: url(../img/icon-feature-5.svg);
+}
+
+.about-us__item--love {
+   background-size: 36px 36px;
+	background-image: url(../img/icon-feature-2.svg);
+}
+
+.about-us__item--support {
+  background-size: 60px 26px;
+	background-image: url(../img/icon-feature-4.svg);
+}
+
+.about-us__item--pack {
+	background-size: 32px 38px;
+	background-image: url(../img/icon-feature-6.svg);
+}
+
+@media (max-width: 1049px) {
+	.about-us__text,
+	.about-us__list {
+		padding-left: 0;
+	}
+	.about-us__text {
+		font-size: 43px;
+	}
+}
+
+@media (max-width: 768px) {
+	.about-us__item {
+		width: 100%;
+		font-size: 17px;
+    padding-bottom: 30px;
+	}
+	.about-us__text {
+    font-size: 25px;
+    padding-bottom: 32px;
+	}
 }
