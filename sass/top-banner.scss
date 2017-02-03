@@ -1,0 +1,35 @@
+.top-banner {
+	background: $background;
+	background-image: url(../img/bg-zigzag-fill.svg);
+	background-position: 100% 108%;
+	background-repeat: repeat-x;
+	background-size: 100% 12%;
+}
+
+.top-banner__paragraph {
+	font-size: 53px;
+	font-weight: 600;
+  text-align: center;
+  padding-top: 94px;
+  padding-bottom: 110px;
+  margin: 0 auto;
+}
+
+@media (max-width: 1049px) {
+	.top-banner__paragraph {
+		font-size: 43px;
+		padding-bottom: 92px;
+    padding-top: 97px;
+	}
+}
+
+@media (max-width: 768px) {
+	.top-banner__paragraph {
+		font-size: 27px;
+		padding-top: 76px;
+		padding-bottom: 76px;
+	}
+	.top-banner {
+		background-image: none;
+	}
+}

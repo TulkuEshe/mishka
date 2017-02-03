@@ -1,99 +1,144 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-  <meta charset="utf-8">
-  
-  <link href="css/style.css" rel="stylesheet">
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
-  <title>Каталог Мишка</title>
+	<meta charset="utf-8">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
+	<link href="css/style.css" rel="stylesheet">
+	<title>Каталог Мишка</title>
 </head>
 <body class="body">
-	<header class="header container">
-    <menu class="menu">
-      <div class="menu__item">
-      	<a class="menu__link" href="">Каталог товаров</a>
-				<a class="menu__link" href="">Вязание на заказ</a>
-				<a class="menu__link  menu__link--secondary" href="">Новые поступления</a>
-			  <a class="menu__link  menu__link--secondary" href="">Распродажа</a>
-      </div>
-      <div class="menu__item">
-      	<img class="menu__logo" src="img/logo-1.png">
-      </div>
-      <div class="menu__item">
-        <div class="menu__search">
-        	<img src="img/search.png">
-        </div>
-				<a class="menu__basket" href=""><img src="img/bascket.png">Корзина: пока пуста</a>
-				<a class="menu__delivery" href="">Бесплатная доставка по России</a>
-      </div>
-  	</menu>
+	<header class="header"> 
+	    <menu class="menu ">
+	      <div class="container">
+		        <div class="menu__top">
+			        <div class="menu__item  menu__item--first">
+			      		<a class="menu__link  menu__link--first" href="">Каталог товаров</a>
+								<a class="menu__link  menu__link--second" href="">Вязание на заказ</a>
+							</div>
+							<div class="menu__item  menu__item--center">
+							  <picture>
+							    <source media="(max-width: 768px)" srcset="img/logo-mobile.svg">
+	                <source media="(max-width: 1049px)" srcset="img/logo-tablet.svg">
+			      			<img src="img/logo-desktop.svg" alt="Мишка главное лого">
+			      			<img class="open__menu" src="img/icon-menu-open.svg">
+			      			<img class="closed__menu" src="img/icon-menu-close.svg">
+			      		</picture>
+			      	</div>
+			      	<div class="menu__item  menu__item--last">
+				        <div class="menu__search">
+				          <div class="menu__img">
+				        	<img src="img/icon-search.svg">
+				        	</div>
+				        	<a class="menu__link menu__link--search" href="#">Поиск по сайту</a>
+								</div>
+								<div class="menu__basket" >
+									<a class="menu__last-link" href="">
+										<img src="img/icon-cart.svg">
+										<p class="menu__info">Корзина: пока пуста</p>
+									</a>
+								</div> 
+							</div>
+						</div>
+					</div>
+					<div class="menu__bottom">
+						<div class="container">
+							<div class="menu__item  menu__item--hidden">
+								<a class="menu__link  menu__link--first" href="">Новые поступления</a>
+					  		<a class="menu__link  menu__link--second" href="">Распродажа</a>
+							</div>
+							<div class="menu__item menu__item--delivery">
+							  <a class="menu__delivery" href="#">Бесплатная доставка по России</a>
+							</div>
+						</div>
+				</div>
+	  	</menu>
 	</header>
 	<main>
-		<section class="banner  container">
-		  	<h1 class="banner__paragraph">Каталог товаров</h1>
+		<section class="top-banner top-banner--catalog">
+		  <div class="container">
+			  <h1 class="top-banner__paragraph">Каталог товаров</h1>
+			</div>
 		</section>  
-    <section>
-		  <div class="catalog__item">
-		  	<div class="catalog__photo  catalog__photo--rabbit"></div>
-	      <div class="catalog__text">
-		      <h3 class="сatalog__name">Зайчик-попрыгайчик</h3>
-		      <p class="catalog__features">Рост 30 см, вес 200 г</p>
-	      </div>
-	      <div class="catalog__price">
-	      	<p class="catalog__cost">1 200 руб.</p>
-		      <span class="catalog__basket"></span>
-		    </div>
-		  </div>
-		  <div class="catalog__item">
-		  	<div class="catalog__photo  catalog__photo--crate"></div>
-	      <div class="catalog__text">
-	       	<h3 class="catalog__name">Корзинка для белья</h3>
-	       	<p class="catalog__features">Диаметр 15 см, высота 10 см</p>
-	      </div>
-	      <div class="catalog__price">
-	      	<p class="catalog__cost">960 руб.</p>
-		      <span class="catalog__basket"></span>
-	      </div>
-		  </div>
-		  <div class="catalog__item">
-		  	<div class="catalog__photo  catalog__photo--pannier"></div>
-	      <div class="catalog__text">
-	      	<h3 class="catalog__name">Большая корзинка для игрушек</h3>
-	       	<p class="catalog__features">Диаментр 30 см, высота 30 см</p>
-	      </div>
-	      <div class="catalog__price">
-	        <p class="catalog__cost">1 500 руб.</p>
-		      <span class="catalog__basket"></span>
-	      </div>
-		  </div>
+		<section class="container catalog">
+			<div class="catalog__item">
+				<div class="catalog__photo">
+				  <picture>
+				    <source media="(max-width: 1049px)" srcset="img/photo-1-tablet@1x.jpg, img/photo-1-tablet@2x.jpg 2x">
+			      <source media="(max-width: 768px)" srcset="img/photo-1-mobile@1x.jpg, img/photo-1-mobile@2x.jpg 2x">
+				    <img srcset="img/photo-1-desktop@1x.jpg, img/photo-1-desktop@2x.jpg2x">
+				  </picture>
+				</div>
+				<div class="catalog__text">
+					<h3 class="сatalog__name">Зайчик-попрыгайчик</h3>
+					<p class="catalog__features">Рост 30 см, вес 200 г</p>
+				</div>
+				<div class="catalog__price">
+					<p class="catalog__cost">1 200 руб.</p>
+				</div>
+			</div>
+			<div class="catalog__item">
+				<div class="catalog__photo">
+				<picture>
+				  <source media="(max-width: 1049px)" srcset="img/photo-2-tablet@1x.jpg, img/photo-2-tablet@2x.jpg 2x">
+			    <source media="(max-width: 768px)" srcset="img/photo-2-mobile@1x.jpg, img/photo-2-mobile@2x.jpg 2x">
+					<img srcset="img/photo-2-desktop@1x.jpg, img/photo-2-desktop@2x.jpg 2x" alt="фото Мишка">
+				</picture>
+				</div>
+				<div class="catalog__text">
+					<h3 class="catalog__name catalog__name--next">Корзинка для белья</h3>
+					<p class="catalog__features">Диаметр 15 см, высота 10 см</p>
+				</div>
+				<div class="catalog__price">
+					<p class="catalog__cost">960 руб.</p>
+				</div>
+			</div>
+			<div class="catalog__item">
+				<div class="catalog__photo">
+				  <picture>
+				    <source media="(max-width: 1049px)" srcset="img/photo-3-tablet@1x.jpg, img/photo-3-tablet@2x.jpg 2x">
+				    <source media="(max-width: 768px)" srcset="img/photo-3-mobile@1x.jpg, img/photo-3-mobile@2x.jpg 2x">
+						<img srcset="img/photo-3-desktop@1x.jpg, img/photo-3-desktop@2x.jpg 2x">
+				  </picture>
+				</div>
+				<div class="catalog__text">
+					<h3 class="catalog__name catalog__name--next">Большая корзинка</br> для игрушек</h3>
+					<p class="catalog__features catalog__features--last">Диаментр 30 см, высота 30 см</p>
+				</div>
+				<div class="catalog__price">
+					<p class="catalog__cost">1 500 руб.</p>
+				</div>
+			</div>
 		</section> 
-    <section class="video">
-      <div class="video__item">
-      	<span class="video__img"></span>
-      	<p class="video__title">Процесс производства</p>
-      </div>
-      <div class="video__item video__item--block">
-      		<video></video>
-      </div>
-      <div class="video__item video__item--text">
-      	<p  class="video__text">По просьбам наших любимых фелловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
-      </div>
-      <div class="video__item video__item--button">
-      	<button class="button">Сделать заказ</button>
-      </div>
-    </section>
+		<section class="video container">
+			<div class="video__item video__item--top-block">
+				<p class="video__title">Процесс производства</p>
+			</div>
+			<div class="video__item video__item--big-block">
+			  <picture>
+			    <source media="(max-width: 1049px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
+			    <source media="(max-width: 768px)" srcset="img/video-mobile@1x.jpg, img/video-mobile@2x.jpg 2x">
+				  <img class="video__img" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
+				</picture>
+			</div>
+			<div class="video__item video__item--text">
+				<p  class="video__text">По просьбам наших любимых фелловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+			</div>
+			<div class="video__item video__item--button">
+				<button class="button button--write">Сделать заказ</button>
+			</div>
+		</section>
 	</main>
 	<footer class="footer">
 		<div class="container">
-			<div class="footer__item"><img src="img/logo.png"></div>
+			<div class="footer__item footer__item--hidden"><img src="img/logo-footer.svg"></div>
 			<ul class="footer__item  social">
-				<li class="social__icon  social__icon--inst"><img src="img/inst.png"></li>
-				<li class="social__icon  social__icon--fb"><img src="img/fb.png"></li>
-				<li class="social__icon  social__icon--tw"><img src="img/tw.png"></li>
+				<li class="social__icon  social__icon--inst"><img src="img/icon-insta.svg"></li>
+				<li class="social__icon  social__icon--fb"><img src="img/icon-fb.svg"></li>
+				<li class="social__icon  social__icon--tw"><img src="img/icon-twitter.svg"></li>
 			</ul>
 			<div class="footer__item  footer__dev">
 				<p class="footer__dev-copy">Разработано</p>
-				<div class="footer__dev-photo"><img src="img/html.png"></div>
+				<div class="footer__dev-photo"><img src="img/logo-htmlacademy.svg"></div>
 			</div>			
     </div>
 	</footer>

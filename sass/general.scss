@@ -5,4 +5,39 @@ li {
 a {
 	text-decoration: none;
 	color: #000000;
+	display: flex;
+}
+
+ul {
+	padding-left: 0;
+}
+
+img {
+	max-width: 100%;
+}
+
+label {
+	cursor: pointer;
+}
+@font-face {
+	font-family: 'Open Sans';
+  src: url('webfont.eot'); /* IE9 Compat Modes */
+  src: url('webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('webfont.woff2') format('woff2'), /* Super Modern Browsers */
+       url('webfont.woff') format('woff'), /* Pretty Modern Browsers */
+       url('webfont.ttf')  format('truetype'), /* Safari, Android, iOS */
+       url('webfont.svg#svgFontName') format('svg'); /* Legacy iOS */
+}
+picture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+svg path fill:hover {
+	background-color: $green;
+}
+
+svg path fill:active {
+	background-color: #d0f1ea;
 }

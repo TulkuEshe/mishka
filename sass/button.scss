@@ -1,0 +1,89 @@
+.button {
+	background: none;
+	border: 2px solid $colortext;
+	text-transform: uppercase;
+	color: $colortext;
+	font-size: 17px;
+	font-weight: 600;
+  min-height: 52px;
+	&--write {
+    width: 230px;
+	}
+  &--write-top {
+    width: 173px;
+  }
+	&--sent {
+	 width: 235px;
+}
+
+  &--size {
+  	width: 32%;
+    border-color: $bordercolor;
+  }
+  &--add {
+  	color: $white;
+  	background-color: $lightgreen;
+    width: 100%;
+  	border: none;
+  }
+  &--order {
+    width: 288px;
+    width: 100%;
+    margin: 0;
+    text-align: center;
+}
+}
+.button.button--size:hover {
+    border-color: $hoverbutton;
+    background: $white;
+    color: $colortext;
+  }
+.button.button--size:active {
+    border-color: $green;
+    background: $white;
+    color: $colortext;
+   }
+.button:hover {
+  background-color: $colortext;
+  color: $white;
+}
+.button:active {
+  background-color: $colortext;
+  color: $activcolor;
+}
+@media (max-width: 1049px) {
+  .button {
+  &--write {
+    width: 228px;
+  }
+}
+}
+
+@media (max-width: 768px) {
+ .button {
+  font-size: 17px;
+  &--order {
+   width: 260px;
+   width: 100%;
+  }
+ &--write-top {
+   width: 260px;
+  }
+ &--size {
+  font-size: 17px;
+  width: 80px;
+  width: 100%;
+ }
+ &--write {
+   width: 260px;
+  }
+  &--sent {
+    position: relative;
+    width: 100%;
+    top: auto;
+    left: auto;
+    width: 260px;
+  }
+  }
+  
+}

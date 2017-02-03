@@ -1,0 +1,132 @@
+.about-us {
+  padding-top: 61px;
+}
+
+.about-us__text {
+	font-size: 53px;
+	font-weight: 600;
+	text-align: left;
+	padding-left: 173px;
+	padding-bottom: 24px;
+	margin: 0 auto;
+}
+
+.about-us__item {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	font-size: 20px;
+	width: 50%;
+	font-weight: 600;
+	padding-top: 53px;
+	padding-bottom: 57px;
+	background-repeat: no-repeat;
+	background-position: 0 0;
+
+}
+.about-us__list {
+	display: flex;
+	width: 100%;
+	max-width: 698px;
+	align-items: center;
+	flex-wrap: wrap;
+	padding-left: 175px;
+	justify-content: flex-start;
+	padding-top: 5px;
+}
+
+.about-us__item--eco {
+  background-size: 34px 40px;
+	background-image: url(../img/icon-feature-1.svg);
+}
+
+.about-us__item--style {
+  background-size: 50px 30px;
+	background-image: url(../img/icon-feature-3.svg);
+}
+
+.about-us__item--like {
+  background-size: 38px 26px;
+	background-image: url(../img/icon-feature-5.svg);
+}
+
+.about-us__item--love {
+   background-size: 36px 36px;
+	background-image: url(../img/icon-feature-2.svg);
+}
+
+.about-us__item--support {
+  background-size: 60px 26px;
+	background-image: url(../img/icon-feature-4.svg);
+}
+
+.about-us__item--pack {
+	background-size: 32px 38px;
+	background-image: url(../img/icon-feature-6.svg);
+}
+
+@media (max-width: 1049px) {
+	.about-us {
+    padding-top: 24px;
+   }
+	.about-us__text,
+	.about-us__list {
+		padding-left: 0;
+	}
+	.about-us__text {
+		font-size: 43px;
+	  padding-bottom: 28px;
+	}
+	.about-us__item--eco {
+		background-size: 33px 40px;
+		background-position: 9px 0%;
+	}
+	.about-us__item {
+		background-position: 9px 0%;
+	}
+	.about-us__item--love {
+		background-position: 5px 0%;
+	}
+	.about-us__item--style {
+		background-position: 3px 0%;
+		background-size: 48px 28px;
+	}
+	.about-us__item--support {
+		background-position: 0 0;
+		background-size: 53px 25px;
+	}
+	.about-us__item--like {
+   background-size: 35px 30px;
+   background-position: 7px 0%;
+	}
+	.about-us__item--pack {
+		background-position: 5px -3px;
+	}
+	    
+}
+
+@media (max-width: 768px) {
+	.about-us {
+		padding-top: 22px;
+		padding-left: 15px;
+	}
+	.about-us__item {
+		width: 100%;
+		font-size: 17px;
+    padding-bottom: 32px;
+	}
+	.about-us__text {
+    font-size: 25px;
+    padding-bottom: 10px;
+	}
+	.about-us__list {
+		padding-top: 9px;
+	}
+	.about-us__item--eco {
+		background-position: 10px 0;
+	}
+	.about-us__item--pack {
+    background-position: 6px -3px;
+  }
+}
