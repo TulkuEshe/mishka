@@ -5,9 +5,9 @@
 	color: $colortext;
 	font-size: 17px;
 	font-weight: 600;
-  min-height: 48px;
+  min-height: 52px;
 	&--write {
-    width: 226px;
+    width: 230px;
 	}
   &--write-top {
     width: 173px;
@@ -61,14 +61,13 @@
 
 @media (max-width: 768px) {
  .button {
-  font-size: 18px;
+  font-size: 17px;
   &--order {
    width: 260px;
    width: 100%;
   }
  &--write-top {
-   width: 100%;
-
+   width: 260px;
   }
  &--size {
   font-size: 17px;
@@ -76,7 +75,7 @@
   width: 100%;
  }
  &--write {
-   width: 192px;
+   width: 260px;
   }
   &--sent {
     position: relative;

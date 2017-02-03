@@ -8,12 +8,15 @@
 	display: flex;
 	align-content: flex-start;
 	text-align: center;
+  width: 22%;
 }
-
 .social {
-	    display: flex;
-    justify-content: space-around;
-    width: 150px;
+  width: 51%;
+	display: flex;
+  padding-top: 2px;
+  justify-content: flex-end;
+  max-width: 170px;
+  align-items: center;
 }
 
 .footer__dev {
@@ -22,23 +25,91 @@
 	justify-content: flex-end;
 	align-items: center;
 	box-sizing: border-box;
-	padding-right: 40px;
 }
 
 .footer {
 	background-color: #f1f1f1;
+  padding-top: 38px;
+  padding-bottom: 50px;
 }
 
 .social__icon {
 	display: flex;
 	align-items: center;
+  width: 100%;
 }
 .footer__dev-copy {
-    padding-right: 20px;
+    width: 84%;
+    font-size: 19px;
+    font-weight: 600;
+ }
+ .footer__dev-photo {
+    width: 16%;
+}
+.social__icon.social__icon--inst {
+    width: 38%;
+}
+.social__icon.social__icon--tw {
+  width: 31%;
+}
+.social__icon.social__icon--fb {
+  width: 31%
+}
 
+ @media (max-width: 1049px) {
+   .footer {
+    padding-top: 39px;
+    padding-bottom: 39px;
+    width: 100%;
+   }
+   .footer__item.social {
+    padding-top: 0;
+    flex-basis: 144px;
+    width: 30%;
+   }
+   .footer__item {
+    flex-basis: 209px;
+   }
+   .footer__dev {
+    padding-top: 5px;
+   }
+   .footer__dev-copy {
+    flex-basis: 106px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+   }
+   .footer__dev-photo {
+    flex-basis: 61px;
+    display: flex;
+    justify-content: flex-end;
+    }
+   .footer__item--hidden {
+    justify-content: flex-start;
+    width: 35%;
+   }
+   .social__icon.social__icon--inst {
+    width: 37%;
+    display: flex;
+    justify-content: flex-start;
+   }
+   .social__icon.social__icon--fb {
+    width: 35%;
+    display: flex;
+    justify-content: center;
+   }
+   .social__icon.social__icon--tw {
+    width: 36%;
+    display: flex;
+    justify-content: flex-end;
+   }
  }
 
  @media (max-width: 768px) {
+  .footer {
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
   .footer__dev {
   	padding-right: 0;
   }
@@ -56,12 +127,27 @@
   .footer__dev-copy {
   	font-size: 19px;
   	width: 66%;
+    flex-basis: 100px;
   }
   .footer__item--hidden {
   	display: none;
   }
   .footer__dev-photo {
     width: 34%;
+    padding-top: 8px;
+    flex-basis: 180px;
   }
+  .social {
+    padding-left: 64px;
+    padding-right: 56px;
+    padding-bottom: 12px;
+  }
+ .footer__dev {
+    padding-left: 47px;
+    padding-right: 0;
+    padding-top: 6px;
+    display: flex;
+    flex-basis: 228px;
+   }
  }
 

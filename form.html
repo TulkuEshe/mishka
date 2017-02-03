@@ -8,54 +8,50 @@
 </head>
 <body class="body">
 	<header class="header"> 
-		<div class="container">
-	    <menu class="menu container">
-	        <div class="menu__top">
-		        <div class="menu__item  menu__item--first">
-		      		<a class="menu__link  menu__link--first" href="">Каталог товаров</a>
-							<a class="menu__link  menu__link--second" href="">Вязание на заказ</a>
-						</div>
-						<div class="menu__item  menu__item--center">
-						  <div class="menu__logo">
-		      			<img  src="img/logo-desktop.svg">
-		      		</div>
-		      		<div class="menu__tablet">
-		      			<img src="img/logo-tablet.svg">
-		      		</div>		
-		      		<div class="menu__mobile">
-		      			<img  src="img/logo-mobile.svg">
-		      		</div>
-		      		<div class="menu__open">
-		      			<img  src="img/icon-menu-open.svg">
-		      		</div>
-		      		<div class="menu__closed">
-		      			<img  src="img/icon-menu-close.svg">
-		      		</div>		
-		      	</div>
-		      	<div class="menu__item  menu__item--last">
-			        <div class="menu__search">
-			          <div class="menu__img">
-			        	<img src="img/icon-search.svg">
-			        	</div>
-			        	<a class="menu__link menu__link--search" href="#">Поиск по сайту</a>
+	    <menu class="menu ">
+	      <div class="container">
+		        <div class="menu__top">
+			        <div class="menu__item  menu__item--first">
+			      		<a class="menu__link  menu__link--first" href="">Каталог товаров</a>
+								<a class="menu__link  menu__link--second" href="">Вязание на заказ</a>
 							</div>
-							<div class="menu__basket" >
-								<a href="">
-								<img src="img/icon-cart.svg">
-								<p class="menu__info">Корзина: пока пуста</p>
-								</a>
-							</div> 
+							<div class="menu__item  menu__item--center">
+							  <picture>
+	                <source media="(max-width: 1049px)" srcset="img/logo-tablet.svg">
+			      			<source media="(max-width: 768px)" srcset="img/logo-mobile.svg">
+			      			<img src="img/logo-desktop.svg" alt="Мишка главное лого">
+			      			<img class="open__menu" src="img/icon-menu-open.svg">
+			      			<img class="closed__menu" src="img/icon-menu-close.svg">
+			      		</picture>
+			      	</div>
+			      	<div class="menu__item  menu__item--last">
+				        <div class="menu__search">
+				          <div class="menu__img">
+				        	<img src="img/icon-search.svg">
+				        	</div>
+				        	<a class="menu__link menu__link--search" href="#">Поиск по сайту</a>
+								</div>
+								<div class="menu__basket" >
+									<a href="">
+									<img src="img/icon-cart.svg">
+									<p class="menu__info">Корзина: пока пуста</p>
+									</a>
+								</div> 
+							</div>
 						</div>
 					</div>
 					<div class="menu__bottom">
-						<div class="menu__item  menu__item--hidden">
-							<a class="menu__link  menu__link--first" href="">Новые поступления</a>
-				  		<a class="menu__link  menu__link--second" href="">Распродажа</a>
+						<div class="container">
+							<div class="menu__item  menu__item--hidden">
+								<a class="menu__link  menu__link--first" href="">Новые поступления</a>
+					  		<a class="menu__link  menu__link--second" href="">Распродажа</a>
+							</div>
+							<div class="menu__item menu__item--delivery">
+							<a class="menu__delivery" href="#">Бесплатная доставка по России</a>
+							</div>
 						</div>
-						<a class="menu__delivery" href="#">Бесплатная доставка по России</a>
-					</div>
+				</div>
 	  	</menu>
-  	</div>
 	</header>
 	<main class="main">
 		<section class="top-banner">	
@@ -66,7 +62,7 @@
 		<section class="form-block container">
 			<p class="form-block__description">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали</p>
 		</section>
-		<section class="form-block">
+		<section class="form-block form-block--second">
 		 <div class="container">
 				<div class="form-block__left">
 					Тип
@@ -118,7 +114,7 @@
 							<input class="form-block__open-input  form-block__open-input--next" type="text" name="" placeholder="Укажите фамилию*" required>
 						</div>
 					</div>
-					<div class="form-block__line">
+					<div class="form-block__line form-block__line--last">
 						<label class="form-block__text">Отчество:</label>
 						<div class="form-block__regular-input">
 							<input class="form-block__open-input  form-block__open-input--next" type="text" name="" placeholder="Отчество, если желаете"> 

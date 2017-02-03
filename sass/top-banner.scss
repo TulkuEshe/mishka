@@ -3,14 +3,14 @@
 	background-image: url(../img/bg-zigzag-fill.svg);
 	background-position: 100% bottom;
 	background-repeat: repeat-x;
-	background-size: 113%;
+	background-size: 75% 11%;
 }
 
 .top-banner__paragraph {
 	font-size: 53px;
 	font-weight: 600;
   text-align: center;
-  padding-top: 100px;
+  padding-top: 94px;
   padding-bottom: 110px;
   margin: 0 auto;
 }
@@ -18,6 +18,8 @@
 @media (max-width: 1049px) {
 	.top-banner__paragraph {
 		font-size: 43px;
+		padding-bottom: 92px;
+    padding-top: 97px;
 	}
 }
 

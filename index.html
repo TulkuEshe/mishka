@@ -2,7 +2,6 @@
 <html lang="ru">
 <head>
   <meta charset="utf-8">
-  
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800&amp;subset=cyrillic" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
@@ -10,46 +9,50 @@
 </head>
 <body class="body">
 	<header class="header"> 
-		<div class="container">
-	    <menu class="menu container">
-	        <div class="menu__top">
-		        <div class="menu__item  menu__item--first">
-		      		<a class="menu__link  menu__link--first" href="">Каталог товаров</a>
-							<a class="menu__link  menu__link--second" href="">Вязание на заказ</a>
-						</div>
-						<div class="menu__item  menu__item--center">
-						  <picture>
-                <source media="(max-width: 1049px)" srcset="img/logo-tablet.svg">
-		      			<source media="(max-width: 768px)" srcset="img/logo-mobile.svg">
-		      			<img  src="img/logo-desktop.svg" alt="Мишка главное лого">
-		      		</picture>
-		      			<img class="open__menu" src="img/icon-menu-open.svg">
-		      			<img class="closed__menu" src="img/icon-menu-close.svg">
-		      	</div>
-		      	<div class="menu__item  menu__item--last">
-			        <div class="menu__search">
-			          <div class="menu__img">
-			        	<img src="img/icon-search.svg">
-			        	</div>
-			        	<a class="menu__link menu__link--search" href="#">Поиск по сайту</a>
+	    <menu class="menu ">
+	      <div class="container">
+		        <div class="menu__top">
+			        <div class="menu__item  menu__item--first">
+			      		<a class="menu__link  menu__link--first" href="">Каталог товаров</a>
+								<a class="menu__link  menu__link--second" href="">Вязание на заказ</a>
 							</div>
-							<div class="menu__basket" >
-								<a href="">
-								<img src="img/icon-cart.svg">
-								<p class="menu__info">Корзина: пока пуста</p>
-								</a>
-							</div> 
+							<div class="menu__item  menu__item--center">
+							  <picture>
+							    <source media="(max-width: 768px)" srcset="img/logo-mobile.svg">
+	                <source media="(max-width: 1049px)" srcset="img/logo-tablet.svg">
+			      			<img src="img/logo-desktop.svg" alt="Мишка главное лого">
+			      		</picture>
+			      		<img class="open__menu" src="img/icon-menu-open.svg">
+			      		<img class="closed__menu" src="img/icon-menu-close.svg">
+			      	</div>
+			      	<div class="menu__item  menu__item--last">
+				        <div class="menu__search">
+				          <div class="menu__img">
+				        	<img src="img/icon-search.svg">
+				        	</div>
+				        	<a class="menu__link menu__link--search" href="#">Поиск по сайту</a>
+								</div>
+								<div class="menu__basket" >
+									<a href="">
+										<img src="img/icon-cart.svg">
+										<p class="menu__info">Корзина: пока пуста</p>
+									</a>
+								</div> 
+							</div>
 						</div>
 					</div>
 					<div class="menu__bottom">
-						<div class="menu__item  menu__item--hidden">
-							<a class="menu__link  menu__link--first" href="">Новые поступления</a>
-				  		<a class="menu__link  menu__link--second" href="">Распродажа</a>
+						<div class="container">
+							<div class="menu__item  menu__item--hidden">
+								<a class="menu__link  menu__link--first" href="">Новые поступления</a>
+					  		<a class="menu__link  menu__link--second" href="">Распродажа</a>
+							</div>
+							<div class="menu__item menu__item--delivery">
+							<a class="menu__delivery" href="#">Бесплатная доставка по России</a>
+							</div>
 						</div>
-						<a class="menu__delivery" href="#">Бесплатная доставка по России</a>
-					</div>
+				</div>
 	  	</menu>
-  	</div>
 	</header>
 	<main>
 		<section class="banner">
@@ -96,10 +99,10 @@
 		      </div>
 		      <div class="featured__item  featured__item--img">
 		        <picture>
-		          <source media="(max-width: 1049px)" srcset="img/triple-set-tablet@1x.jpg" src="img/triple-set-tablet@2x.jpg" type="">
-		      	  <source media="(max-width: 768px)" srcset="img/triple-set-mobile@1x.jpg" src="img/triple-set-tablet@2x.jpg" type="">
+		      	  <source media="(max-width: 768px)" srcset="img/triple-set-mobile@1x.jpg" >
+		      	  <source media="(max-width: 1049px)" srcset="img/triple-set-tablet@1x.jpg" >
+		      	  <img src="img/triple-set-desktop@1x.jpg">
 		      	</picture>
-		      	<img crcset="img/triple-set-desktop@2x.jpg" src="img/triple-set-desktop@1x.jpg">
 		      </div>
 		    </div>	
 		</section>
@@ -157,19 +160,19 @@
 						</li>
 						<li class="contacts__address">
 							<span class="contacts__label">адрес:</span>  
-							<span class="contacts__info">г. Санкт-Петербург, </br>ул. Большая Конюшенная,</br> д. 19/8, офис 101</span>
+							<span class="contacts__info contacts__info--last">г. Санкт-Петербург, </br>ул. Большая Конюшенная,</br> д. 19/8, офис 101</span>
 						</li>
           </ul>	
 		    </div>
 		  </div>
 		    <div class="contacts__item contacts__item--block-map">
 		    	  <div class="contacts__map">
-			    	  <picture>	
-			    	    <source media="(max-width: 1049px)" srcset="img/map-tablet@1x.jpg" src="img/map-tablet@2x.jpg">
-			    	    <source madia="(max-width: 768px)" srcset="img/map-mobile@1x.jpg" src="img/map-mobile@2x.jpg">
+			    	  <picture> 
+			    	    <source madia="(max-width: 768px)" srcset="img/map-mobile@1x.jpg">	
+			    	    <source media="(max-width: 1049px)" srcset="img/map-tablet@1x.jpg">
 			    	    <source src="img/map-desktop@2x.svg">	    	      
-			    	    <img src="img/map-desktop@1x.jpg">
 			    	  </picture>
+			    	  <img src="img/map-desktop@1x.jpg">
 		    	  </div>
 		    </div>
 		    <div class="contacts__item contacts__item--button">
