@@ -198,7 +198,9 @@
 		padding-top: 0;
     font-size: 15px;
     display: flex;
-    
+    &--left {
+      min-height: 10px;
+    }
 	}
   .contact__label {
     width: 77%;
@@ -237,4 +239,5 @@
   .contacts__info--last {
     line-height: 1.9em;
    }
+
 }
