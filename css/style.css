@@ -1664,12 +1664,8 @@ html {
     width: 100%;
     padding-bottom: 33px; }
   .contacts__item--block-map {
-    width: 120%;
-    background-image: url(../img/map-desktop@2x.jpg);
-    background-repeat: no-repeat;
-    display: block;
-    margin-left: -50px;
-    margin-right: -50px; }
+    width: 100%;
+    display: block; }
   .contacts__item--info {
     max-width: 100%; }
   .contacts__address {
