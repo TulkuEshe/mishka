@@ -63,11 +63,9 @@
 			<div class="catalog__item">
 				<div class="catalog__photo">
 				  <picture>
-			      <source media="(max-width: 768px)" srcset="img/photo-1-mobile@2x.jpg 2x">
-			      <source media="(max-width: 768px)" srcset="img/photo-1-mobile@1x.jpg">
-			      <source media="(max-width: 1049px)" srcset="img/photo-1-desktop@2x.jpg 2x">
-				    <source media="(max-width: 1049px)" srcset="img/photo-1-desktop@1x.jpg">
-				    <img src="img/photo-1-desktop@1x.jpg">
+			      <source media="(max-width: 768px)" srcset="img/photo-1-mobile@1x.jpg, img/photo-1-mobile@2x.jpg 2x">
+			      <source media="(max-width: 1049px)" srcset="img/photo-1-tablet@1x.jpg, img/photo-1-tablet@2x.jpg 2x">
+				    <img srcset="img/photo-1-desktop@1x.jpg, img/photo-1-desktop@2x.jpg2x">
 				  </picture>
 				</div>
 				<div class="catalog__text">
@@ -81,11 +79,9 @@
 			<div class="catalog__item">
 				<div class="catalog__photo">
 				<picture>
-				  <source media="(max-width: 768px)" srcset="img/photo-2-mobile@2x.jpg 2x">
-			    <source media="(max-width: 768px)" srcset="img/photo-2-mobile@1x.jpg">
-				  <source media="(max-width: 1049px)" srcset="img/photo-2-desktop@2x.jpg 2x">
-				  <source media="(max-width: 1049px)" srcset="img/photo-2-desktop@1x.jpg">
-					<img src="img/photo-2-desktop@1x.jpg">
+			    <source media="(max-width: 768px)" srcset="img/photo-2-mobile@1x.jpg, img/photo-2-mobile@2x.jpg 2x">
+				  <source media="(max-width: 1049px)" srcset="img/photo-2-tablet@1x.jpg, img/photo-2-tablet@2x.jpg 2x">
+					<img srcset="img/photo-2-desktop@1x.jpg, img/photo-2-desktop@2x.jpg 2x" alt="фото Мишка">
 				</picture>
 				</div>
 				<div class="catalog__text">
@@ -99,9 +95,9 @@
 			<div class="catalog__item">
 				<div class="catalog__photo">
 				  <picture>
-				    <source media="(max-width: 768px)" srcset="img/photo-3-mobile@1x.jpg">
-					  <source media="(max-width: 1049px)" srcset="img/photo-3-desktop@1x.jpg">
-						<img src="img/photo-3-desktop@1x.jpg">
+				    <source media="(max-width: 768px)" srcset="img/photo-3-mobile@1x.jpg, img/photo-3-mobile@2x.jpg 2x">
+					  <source media="(max-width: 1049px)" srcset="img/photo-3-tablet@1x.jpg, img/photo-3-tablet@2x.jpg 2x">
+						<img srcset="img/photo-3-desktop@1x.jpg, img/photo-3-desktop@2x.jpg 2x">
 				  </picture>
 				</div>
 				<div class="catalog__text">
@@ -118,7 +114,11 @@
 				<p class="video__title">Процесс производства</p>
 			</div>
 			<div class="video__item video__item--big-block">
-				<img class="video__img" src="img/video-desktop@2x.jpg">
+			  <picture>
+			    <source media="(max-width: 768px)" srcset="img/video-mobile@1x.jpg, img/video-mobile@2x.jpg 2x">
+					<source media="(max-width: 1049px)" srcset="img/video-tablet@1x.jpg, img/video-tablet@2x.jpg 2x">
+				  <img class="video__img" srcset="img/video-desktop@1x.jpg, img/video-desktop@2x.jpg 2x">
+				</picture>
 			</div>
 			<div class="video__item video__item--text">
 				<p  class="video__text">По просьбам наших любимых фелловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>

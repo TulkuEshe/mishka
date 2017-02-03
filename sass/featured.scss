@@ -50,7 +50,7 @@
 
 .featured__item--cost {
 	 text-align: center;
-	 padding-top: 70px;
+	 padding-top: 63px;
 }
 
 .featured__price {
@@ -65,7 +65,7 @@
 	font-weight: 600;
 	position: absolute;
 	max-width: 500px;
-	top: 54px;
+	top: 35px;
 	left: 0;
 	margin: 0;
 
@@ -132,6 +132,10 @@
     order: 1;
     padding-top: 110px;
    }
+   &--cost {
+    padding-right: 149px;
+    padding-top: 8px;
+   }
   }
   .featured__item--img {
     max-width: 334px;
@@ -147,10 +151,6 @@
   .featured__title {
   	font-size: 43px;
   	top: 31px;
-  }
-  .featured__item--cost {
-    padding-right: 149px;
-    padding-top: 12px;
   }
   .featured__week {
   	width: 50%;

@@ -32,18 +32,14 @@
 	justify-content: center;
 }
 .menu__basket {
-	padding-left: 30px;
+	padding-left: 22px;
 	display: flex;
 	justify-content: flex-end;
 	align-items: center;
   flex-basis: 220px;
 	img {
-		padding-right: 29px;
+		padding-right: 17px;
 	}
-}
-.menu__img {
-    padding-top: 10px;
-    padding-right: 14px;
 }
 .menu__bottom.menu__link--second {
   padding-left: 0;
@@ -122,7 +118,7 @@
 }
 
 .menu__bottom .menu__link--second {
-  padding-left: 32px;
+  padding-left: 30px;
 }
 
 img.open__menu {
